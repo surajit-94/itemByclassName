@@ -28,6 +28,14 @@
 // item.style.fontWeight="bold";
 // item.style.backgroundColor="yellow";
 
-var li=document.getElementsByTagName("li");
-console.log(li);
-li[4].style.backgroundColor="red";
+// var li=document.getElementsByTagName("li");
+// console.log(li);
+// li[4].style.backgroundColor="red";
+
+var  odd=document.querySelectorAll("li:nth-child(odd)");
+for( let i=0;i<odd.length;i++)
+{
+    odd[i].style.background="green";
+}
+var  secondItem=document.querySelector("li:nth-child(2)");;
+secondItem.style.color="green";
